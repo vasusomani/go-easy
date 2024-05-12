@@ -1,0 +1,61 @@
+{
+  "name": "go-easy",
+  "displayName": "go easy",
+  "description": "Go Easy is your Go development companion, simplifying your workflow with automatic server reloading upon saving files. Seamlessly integrate auto-reloading functionality into your Go projects within Visual Studio Code. Focus on coding while Go Easy handles the hassle of restarting your server. Boost your productivity and streamline your development process with Go Easy!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+   "activationEvents": [
+    "onCommand:goEasy.setProjectDirectory"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "id": "goEasy.projectDirectory",
+        "title": "Go Easy: Project Directory",
+        "properties": {
+          "goEasy.projectDirectory": {
+            "type": "string",
+            "default": "",
+            "description": "The directory path of your Go project."
+          }
+        }
+      }
+    ],
+    "commands": [
+      {
+        "command": "goEasy.setProjectDirectory",
+        "title": "Go Easy"
+      }
+    ],
+    "keybindings":[
+      {
+        "command": "goEasy.setProjectDirectory",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "vscode": "^1.1.37"
+  }
+}
