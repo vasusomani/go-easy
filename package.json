@@ -30,8 +30,12 @@
     "commands": [
       {
         "command": "goEasy.setProjectDirectory",
-        "title": "Go Easy"
-      }
+        "title": "Go Easy: Start Server"
+      },
+      {
+    "command": "goEasy.pauseExtension",
+    "title": "Go Easy: Stop Server"
+  }
     ],
     "keybindings":[
       {
