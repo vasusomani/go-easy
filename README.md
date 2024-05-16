@@ -1,65 +1,45 @@
-# go-easy README
+# Go Easy
 
-This is the README for your extension "go-easy". After writing up a brief description, we recommend including the following sections.
+Go Easy is your Go development companion, simplifying your workflow with automatic server reloading upon saving files. Seamlessly integrate auto-reloading functionality into your Go projects within Visual Studio Code. Focus on coding while Go Easy handles the hassle of restarting your server. Boost your productivity and streamline your development process with Go Easy!
+
+## Installation
+
+You can install Go Easy directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VasuSomani.go-easy). Simply search for "Go Easy" in the Extensions view (Ctrl+Shift+X) and click Install.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Automatic server reloading upon saving files
+- Simplified workflow for Go development
+- Integration with Visual Studio Code
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage
 
-\!\[feature X\]\(images/feature-x.png\)
+1. **Setting Up Your Project**
+   Open your Go project in Visual Studio Code.
+   Use the command palette (Ctrl+Shift+P or Cmd+Shift+P) and select **Go Easy: Start Server** to set the project directory or use shortcut Ctrl+Shit+T or Cmd+Shift+T
+   Enter the directory path of your Go project where the main.go or server.go is present or press Enter to select the current directory.
+2. **Starting the Server**
+   Once the project directory is set, the server will automatically start.
+   You can also start the server manually by using the command Go Easy: Start Server.
+3. **Writing Your Go Code**
+   Write your Go code as usual in Visual Studio Code.
+   Save your files (Ctrl+S or Cmd+S) to trigger automatic server reloading.
+   The logs will be visible in Output Window of your editor
+4. **Stopping the Server**
+   When you're done working on your project, you can stop the server using the command **Go Easy: Stop Server**.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Configuration
 
-## Requirements
+- `goEasy.projectDirectory`: The directory path of your Go project.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Keyboard Shortcuts
 
-## Extension Settings
+- **Start Server**: Ctrl+Shift+T (Cmd+Shift+T on macOS)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Support
 
-For example:
+For any issues, feedback, or feature requests, please [open an issue](https://github.com/vasusomani/go-easy/issues) on GitHub.
 
-This extension contributes the following settings:
+## Repository
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+You can find the source code and contribute to this extension on [GitHub](https://github.com/vasusomani/go-easy).
